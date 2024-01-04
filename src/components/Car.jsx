@@ -16,6 +16,7 @@ const Car = () => {
           'Content-Type': 'application/json'
         }
       });
+      console.log(response.data.jwt)
       return response.data.jwt; // JWT 반환
     } catch (error) {
       console.error('Login error', error);
