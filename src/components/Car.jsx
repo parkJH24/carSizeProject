@@ -30,7 +30,7 @@ const Car = () => {
     // JWT를 사용하여 모델 데이터를 가져오는 함수
     const fetchCarModels = async (jwt) => {
         try {
-            const response = await axios.get('http://localhost:8080/api/models', {
+            const response = await axios.get(`${PROXY}/api/models`, {
                 headers: {
                     'Authorization': `Bearer ${jwt}`
                 }
