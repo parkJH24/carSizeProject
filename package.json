@@ -24,6 +24,7 @@
       "react-app/jest"
     ]
   },
+  "homepage": "https://car-resize.netlify.app",
   "proxy": "https://carapi.app",
   "browserslist": {
     "production": [
