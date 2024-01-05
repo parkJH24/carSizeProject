@@ -8,6 +8,7 @@ const Car = () => {
     // 로그인하고 JWT 토큰을 받아오는 함수
 
     const PROXY = window.location.hostname === 'localhost' ? '' : '/proxy';
+    console.log(PROXY)
     const URL = `${PROXY}/api/auth/login`;
     const loginAndGetJwt = async () => {
         try {
